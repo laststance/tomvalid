@@ -74,6 +74,6 @@ pnpm publish
 
 `publishConfig.access = "public"` is set in `package.json` so the publish intent stays with the package manifest.
 
-This directory is not currently attached to a git remote, so `repository`, `bugs`, and `homepage` metadata are intentionally left out until there is a canonical URL to point at.
+Repository metadata now points at `laststance/tomvalid` on GitHub.
 
 See `CONTRIBUTING.md` for the maintainer workflow.

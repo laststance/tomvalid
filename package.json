@@ -1,52 +1,60 @@
 {
-  "name": "tomvalid",
-  "version": "0.1.0",
-  "description": "Human-readable TOML validation CLI powered by Node.js and @iarna/toml.",
-  "type": "module",
-  "private": false,
-  "packageManager": "pnpm@10.33.0",
-  "bin": {
-    "tomvalid": "./dist/cli.cjs"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
-  ],
-  "engines": {
-    "node": ">=18"
-  },
-  "keywords": [
-    "toml",
-    "validator",
-    "cli",
-    "node",
-    "npm"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "dev": "tsx src/cli.ts",
-    "test": "vitest run",
-    "typecheck": "tsc --noEmit",
-    "lint": "biome check src scripts test package.json index.ts",
-    "format": "biome format --write src scripts test package.json README.md index.ts",
-    "check": "pnpm run typecheck && pnpm run lint && pnpm run test",
-    "build": "tsx scripts/build.ts",
-    "prepublishOnly": "pnpm run check && pnpm run build"
-  },
-  "dependencies": {
-    "@iarna/toml": "^2.2.5",
-    "citty": "^0.2.2"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.4.10",
-    "@types/node": "^25.5.0",
-    "esbuild": "^0.27.7",
-    "tsx": "^4.21.0",
-    "typescript": "^6.0.2",
-    "vitest": "^4.1.2"
-  }
+	"name": "tomvalid",
+	"version": "0.1.0",
+	"description": "Human-readable TOML validation CLI powered by Node.js and @iarna/toml.",
+	"type": "module",
+	"private": false,
+	"packageManager": "pnpm@10.33.0",
+	"bin": {
+		"tomvalid": "./dist/cli.cjs"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"engines": {
+		"node": ">=18"
+	},
+	"keywords": [
+		"toml",
+		"validator",
+		"cli",
+		"node",
+		"npm"
+	],
+	"homepage": "https://github.com/laststance/tomvalid#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/laststance/tomvalid.git"
+	},
+	"bugs": {
+		"url": "https://github.com/laststance/tomvalid/issues"
+	},
+	"license": "MIT",
+	"scripts": {
+		"dev": "tsx src/cli.ts",
+		"test": "vitest run",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check src scripts test package.json index.ts",
+		"format": "biome format --write src scripts test package.json README.md index.ts",
+		"check": "pnpm run typecheck && pnpm run lint && pnpm run test",
+		"build": "tsx scripts/build.ts",
+		"prepublishOnly": "pnpm run check && pnpm run build"
+	},
+	"dependencies": {
+		"@iarna/toml": "^2.2.5",
+		"citty": "^0.2.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.10",
+		"@types/node": "^25.5.0",
+		"esbuild": "^0.27.7",
+		"tsx": "^4.21.0",
+		"typescript": "^6.0.2",
+		"vitest": "^4.1.2"
+	}
 }
