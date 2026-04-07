@@ -2,6 +2,10 @@
 
 `tomvalid` is a small CLI for validating TOML files and returning readable parse errors.
 
+<div align="center">
+  <img src="demo.png" alt="tomvalid demo" />
+</div>
+
 It is managed with pnpm, built with esbuild, and is designed to work through `npx`.
 
 It is packaged as a small public npm CLI with a conservative publish setup: the published tarball is limited through `files`, the package ships with an MIT license, and publish-time defaults live in `package.json` instead of a repo-local `.npmrc`.
